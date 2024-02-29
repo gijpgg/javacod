@@ -1,0 +1,55 @@
+package principal;
+
+import javax.swing.JOptionPane;
+
+public class Produto {
+
+    public String nome;
+    public String peso;
+    public String preço;
+
+    public static void main(String[] args) {
+
+        String nome;
+        nome = JOptionPane.showInputDialog("Digite o nome:");
+        String peso;
+        peso = JOptionPane.showInputDialog("Digite o peso");
+        String preço;
+        preço = JOptionPane.showInputDialog("Digite o preço");
+
+        JOptionPane.showMessageDialog(null, "O nome é: " + nome);
+        JOptionPane.showMessageDialog(null, "O peso é: " + peso);
+        JOptionPane.showMessageDialog(null, "O preço é: " + preço);
+
+    }
+
+    public Produto(String nome, String peso, String preço) {
+        this.nome = nome;
+        this.peso = peso;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getpeso() {
+        return peso;
+    }
+
+    public void setTelefone(String peso) {
+        this.peso = peso;
+    }
+
+    public String getpreço() {
+        return preço;
+    }
+
+    public void setPreço(String preço) {
+        this.preço = preço;
+    }
+
+}
